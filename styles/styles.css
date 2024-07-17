@@ -1,0 +1,120 @@
+
+/* import section */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* font styles */
+.open-sans-font {
+    font-family: "Open Sans", sans-serif;
+  }
+
+/* shared styles */
+.bg-primary{
+    background-color: black;
+}
+.btn-primary{
+    background-color: orangered;
+    padding: 18px 45px;
+    border-radius: 40px;
+    color: white;
+    font-size: 1.2rem;
+}
+/* header styles */
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 120px;
+    color: white;
+    align-items: center;
+}
+.header-title{
+    color: rgba(255, 68, 0, 0.9);
+    font-weight: 700;
+}
+nav> ul{
+    display: flex;
+    gap: 50px;
+    border: 1px solid burlywood;
+    border-radius: 39px;
+    padding: 4px 10px;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+#menu{
+    display: none;
+}
+.home{
+    background-color: rgba(255, 68, 0, 0.9);
+    border-radius: 46px;
+    padding: 8px 18px;
+}
+
+/* banner style */
+.banner-container{
+    display: flex;
+    margin: 5px 120px;
+    justify-content: space-between;
+}
+.banner-title{
+    color: white;
+}
+.title{
+    font-size: 4.8rem;
+    font-weight: 900;
+    margin-bottom: 0px;
+}
+.description{
+    color: darkgray;
+    margin-bottom: 30px;
+}
+.btn-second{
+    background-color: black;
+    padding: 18px 45px;
+    border-color: white;
+    border-radius: 40px;
+    color: white;
+    font-size: 1.2rem;
+    margin-left: 18px;
+}
+
+
+
+/* mobile device */
+@media screen and (max-width: 576px) {
+    body{
+        /* width: 100%; */
+    }
+    .header{
+        margin: 0px;
+    }
+    nav{
+        
+    }
+    .header-title{
+        margin: 0px;
+        margin-left: 15px;
+    }
+    .header-subtitle-container{
+        border: none;
+        padding: 0px;
+        margin: 0px;
+    }
+    .header-subtitle{
+        display: none;
+    }
+    #menu{
+        display: list-item;
+        margin-right: 15px;
+    }
+    #btn{
+        background-color: black;
+        border: none;
+        padding: 0px;
+    }
+}
