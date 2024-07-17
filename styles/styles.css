@@ -1,36 +1,39 @@
-
 /* import section */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 /* font styles */
 .open-sans-font {
     font-family: "Open Sans", sans-serif;
-  }
+}
 
 /* shared styles */
-.bg-primary{
+.bg-primary {
     background-color: black;
 }
-.btn-primary{
+
+.btn-primary {
     background-color: orangered;
-    padding: 18px 45px;
-    border-radius: 40px;
+    padding: 1.1rem 2.8rem;
+    border-radius: 2.5rem;
     color: white;
     font-size: 1.2rem;
 }
+
 /* header styles */
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     margin: 20px 120px;
     color: white;
     align-items: center;
 }
-.header-title{
+
+.header-title {
     color: rgba(255, 68, 0, 0.9);
     font-weight: 700;
 }
-nav> ul{
+
+nav>ul {
     display: flex;
     gap: 50px;
     border: 1px solid burlywood;
@@ -38,83 +41,171 @@ nav> ul{
     padding: 4px 10px;
     align-items: center;
 }
-nav ul li{
+
+nav ul li {
     list-style: none;
 }
-nav a{
+
+nav a {
     text-decoration: none;
     color: white;
     font-weight: 700;
 }
-#menu{
+
+#menu {
     display: none;
 }
-.home{
+
+.home {
     background-color: rgba(255, 68, 0, 0.9);
     border-radius: 46px;
     padding: 8px 18px;
 }
 
 /* banner style */
-.banner-container{
+.banner-container {
     display: flex;
     margin: 5px 120px;
     justify-content: space-between;
 }
-.banner-title{
+
+.banner-title {
     color: white;
 }
-.title{
-    font-size: 4.8rem;
+
+.title {
+    font-size: 3.8rem;
     font-weight: 900;
     margin-bottom: 0px;
 }
-.description{
+
+.description {
     color: darkgray;
     margin-bottom: 30px;
 }
-.btn-second{
+
+.btn-second {
     background-color: black;
-    padding: 18px 45px;
+    padding: 1.1rem 2.8rem;
     border-color: white;
-    border-radius: 40px;
+    border-radius: 2.5rem;
     color: white;
     font-size: 1.2rem;
-    margin-left: 18px;
+    margin-left: 1.1rem;
 }
 
+.cards {
+    padding: 10px 25px;
+    border-radius: 10px;
+    color: darkgray;
+}
+
+#video-card {
+    position: absolute;
+    bottom: 150px;
+    margin-left: -400px;
+    width: 150px;
+    height: 90px;
+}
+
+#card-title-1 {
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.ball {
+    background-color: orangered;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    left: -10px;
+    top: 21px;
+}
+
+#Workout-card {
+    position: absolute;
+    top: 290px;
+    margin-left: -100px;
+}
+
+#card-title-2 {
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
 
 
 /* mobile device */
 @media screen and (max-width: 576px) {
-    body{
-        /* width: 100%; */
-    }
-    .header{
+
+    .header,
+    .title {
         margin: 0px;
     }
-    nav{
-        
-    }
-    .header-title{
+
+    .header-title {
         margin: 0px;
         margin-left: 15px;
     }
-    .header-subtitle-container{
+
+    .header-subtitle-container,
+    .description {
         border: none;
         padding: 0px;
         margin: 0px;
     }
-    .header-subtitle{
+
+    .header-subtitle {
         display: none;
     }
-    #menu{
+
+    #menu {
         display: list-item;
         margin-right: 15px;
     }
-    #btn{
+
+    #btn {
         background-color: black;
         border: none;
         padding: 0px;
+    }
+
+    /* banner styles */
+    .banner-container {
+        margin-left: 5px;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .description {
+        margin-top: 28px;
+    }
+
+    .btn-container {
+        display: flex;
+        gap: 60px;
+        margin-top: 18px;
+    }
+
+    .banner-subtitle {
+        margin-top: 30px;
+    }
+
+    .banner-image {
+        margin-left: 30px;
+    }
+
+    #video-card {
+        top: 1000px;
+        margin-left: 0px;
+        width: 150px;
+        height: 90px;
+    }
+
+    #Workout-card {
+        top: 800px;
+        margin-left: 220px;
     }
 }
