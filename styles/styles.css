@@ -19,6 +19,10 @@
     font-size: 1.2rem;
 }
 
+.padding-primary {
+    padding: 6.25rem 12.5rem;
+}
+
 /* header styles */
 nav {
     display: flex;
@@ -136,9 +140,44 @@ nav a {
     font-weight: 800;
 }
 
+/* habit styles */
+
+.habit {
+    color: white;
+    text-align: center;
+}
+
+.habit-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.fitness {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.fitness-image {
+    border-radius: 50%;
+}
+
+.fitness-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.fitness-description {
+    margin-top: 3px;
+}
 
 /* mobile device */
 @media screen and (max-width: 576px) {
+
+    .padding-primary {
+        padding: 0 1.75rem;
+    }
 
     .header,
     .title {
@@ -174,38 +213,51 @@ nav a {
 
     /* banner styles */
     .banner-container {
-        margin-left: 5px;
+        margin-left: 0.32rem;
         flex-direction: column;
         text-align: left;
     }
 
     .description {
-        margin-top: 28px;
+        margin-top: 1.75rem;
     }
 
     .btn-container {
         display: flex;
-        gap: 60px;
-        margin-top: 18px;
+        gap: 3.75rem;
+        margin-top: 1.12rem;
     }
 
     .banner-subtitle {
-        margin-top: 30px;
+        margin-top: 1.8rem;
     }
 
     .banner-image {
-        margin-left: 30px;
+        margin-left: 1.9rem;
     }
 
     #video-card {
-        top: 1000px;
-        margin-left: 0px;
-        width: 150px;
-        height: 90px;
+        top: 62.5rem;
+        margin-left: 0;
+        width: 9.37rem;
+        height: 5.62rem;
     }
 
     #Workout-card {
-        top: 800px;
-        margin-left: 220px;
+        top: 50rem;
+        margin-left: 13.7rem;
+    }
+
+    /* habit style */
+    .habit-subtitle{
+        margin-top: 0.5rem;
+        margin-bottom: 3rem;
+    }
+    .fitness{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2.5rem;
+    }
+    .fitness-description {
+        margin-top: 0;
     }
 }
