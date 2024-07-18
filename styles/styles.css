@@ -2,11 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 /* font styles */
+.none {
+    display: none;
+}
+
 .open-sans-font {
     font-family: "Open Sans", sans-serif;
 }
 
 /* shared styles */
+body {
+    width: 100%;
+}
+
 .bg-primary {
     background-color: black;
 }
@@ -17,10 +25,37 @@
     border-radius: 2.5rem;
     color: white;
     font-size: 1.2rem;
+    border: none;
 }
 
 .padding-primary {
     padding: 6.25rem 12.5rem;
+}
+
+.section-title {
+    color: white;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.team-subtitle{
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.team-description{
+    color: rgb(189, 185, 185);
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 3.5rem;
+}
+
+.team-title{
+    margin-top: -5.6rem;
+    padding-left: .5rem;
 }
 
 /* header styles */
@@ -145,6 +180,7 @@ nav a {
 .habit {
     color: white;
     text-align: center;
+    padding-bottom: 0;
 }
 
 .habit-title {
@@ -172,11 +208,61 @@ nav a {
     margin-top: 3px;
 }
 
+/* runner styles */
+.runner-container {
+    display: flex;
+    gap: 7.5rem;
+    width: 100%;
+    background-color: rgb(34, 34, 34);
+    padding: 2.5rem 3rem;
+    border-radius: 1rem;
+    align-items: center;
+}
+
+.details {
+    color: white;
+}
+
+.runner-image {
+    background-image: url(../images/run.jpg);
+    width: calc(100% - 200px);
+    height: 20rem;
+    border-radius: 1.25rem;
+    background-position: -46.88rem 50rem;
+}
+
+/* team styles */
+.team{
+    text-align: center;
+}
+.team-container{
+    background-color: rgb(34, 34, 34);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1.25rem;
+    border-radius: 1rem;
+}
+.team-image{
+    width: 20.4rem;
+    height: 17rem;
+    border-radius: 1.15rem;
+}
+
+
+
 /* mobile device */
 @media screen and (max-width: 576px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
 
     .padding-primary {
-        padding: 0 1.75rem;
+        padding: 0 1rem;
+    }
+
+    .runner-container {
+        padding: 0;
     }
 
     .header,
@@ -213,7 +299,7 @@ nav a {
 
     /* banner styles */
     .banner-container {
-        margin-left: 0.32rem;
+        margin-left: 1rem;
         flex-direction: column;
         text-align: left;
     }
@@ -249,15 +335,66 @@ nav a {
     }
 
     /* habit style */
-    .habit-subtitle{
+    .habit-subtitle {
         margin-top: 0.5rem;
         margin-bottom: 3rem;
     }
-    .fitness{
+
+    .fitness {
         grid-template-columns: repeat(1, 1fr);
         gap: 2.5rem;
     }
+
     .fitness-description {
         margin-top: 0;
+    }
+
+    /* runner styles */
+
+    .runner{
+        margin-top: 2rem;
+    }
+    .runner-container {
+        flex-direction: column;
+        gap: 40px;
+        padding-bottom: 30px;
+    }
+
+    .details {
+        padding: 30px 33px;
+    }
+
+    .section-title {
+        margin-top: 0;
+    }
+
+    #runner-description {
+        word-wrap: break-word;
+        text-align: start;
+        margin-bottom: 1rem;
+    }
+
+    .runner-image {
+        width: 287px;
+        height: 170px;
+        background-position: 0 0;
+        background-size: cover;
+    }
+
+    /* team styles */
+
+    .team{
+        margin-top: 4rem;
+    }
+
+    .section-description{
+        margin-bottom: 3rem;
+    }
+
+    .team-container{
+        grid-template-columns: repeat(1, 1fr);
+        padding-left: 2rem;
+        padding-bottom: 0.3rem;
+        padding-top: 2rem;
     }
 }
