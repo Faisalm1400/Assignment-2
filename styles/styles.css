@@ -20,6 +20,10 @@ body {
     width: 100%;
 }
 
+button {
+    cursor: pointer;
+}
+
 .bg-primary {
     background-color: black;
 }
@@ -237,6 +241,44 @@ nav a {
     background-position: -46.88rem 50rem;
 }
 
+/* Membership styles */
+.member {
+    text-align: center;
+}
+
+.memberships {
+    display: flex;
+    gap: 2.5rem;
+    justify-content: center;
+}
+
+.membership-plans {
+    border: 1px solid lightgray;
+    border-radius: 0.8rem;
+    width: 20rem;
+    align-items: center;
+    margin-top: 0.8rem;
+}
+
+.membership-date {
+    color: white;
+    margin-bottom: 1rem;
+    background-color: rgb(34, 34, 34);
+    border-radius: 0.8rem 0.8rem 0 0;
+    font-size: 1.8rem;
+    padding: 0.6rem 0.8rem;
+}
+
+.membership-prize {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 0.6rem;
+}
+
+.btn-member {
+    margin-bottom: 2rem;
+}
+
 
 /* BMI Calculator styles */
 .bmi {
@@ -304,6 +346,7 @@ td {
     width: 70%;
     margin-top: 1rem;
     padding: 1rem 2rem;
+    cursor: pointer;
 }
 
 .bmi-gander {
@@ -519,6 +562,25 @@ hr {
         background-size: cover;
     }
 
+    /* Membership styles */
+    .member{
+        text-align: start;
+        margin-top: 1rem;
+    }
+
+    .memberships{
+        flex-direction: column;
+        text-align: center;
+        margin-left: 2rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        gap: 1.5rem;
+    }
+
+    .member-description{
+        margin-top: 0;
+        margin-bottom: 1.8rem;
+    }
 
     /* BMI styles */
     .bmi {
@@ -526,7 +588,7 @@ hr {
         margin-top: 1.3rem;
     }
 
-    .bmi-section-title{
+    .bmi-section-title {
         padding: 1rem;
     }
 
@@ -537,7 +599,7 @@ hr {
         margin-top: 1rem;
     }
 
-    table{
+    table {
         margin-bottom: 2rem;
     }
 
@@ -545,7 +607,7 @@ hr {
         width: 95%;
     }
 
-    #factor{
+    #factor {
         width: 195%;
     }
 
