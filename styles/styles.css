@@ -11,6 +11,11 @@
 }
 
 /* shared styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     width: 100%;
 }
@@ -39,21 +44,21 @@ body {
     margin-bottom: 1rem;
 }
 
-.team-subtitle{
+.team-subtitle {
     color: white;
     font-size: 1.25rem;
     font-weight: 600;
     margin: 0;
 }
 
-.team-description{
+.team-description {
     color: rgb(189, 185, 185);
     font-weight: 500;
     margin: 0;
     margin-bottom: 3.5rem;
 }
 
-.team-title{
+.team-title {
     margin-top: -5.6rem;
     padding-left: .5rem;
 }
@@ -231,21 +236,152 @@ nav a {
     background-position: -46.88rem 50rem;
 }
 
-/* team styles */
-.team{
+
+/* BMI Calculator styles */
+.bmi {
+    color: white;
     text-align: center;
 }
-.team-container{
+
+.bmi-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(34, 34, 34);
+    padding: 3rem 10rem;
+    text-align: start;
+    gap: 20%;
+}
+
+table {
+    border-collapse: collapse;
+    margin-top: 2rem;
+    margin-right: 12rem;
+    width: 90%;
+    height: 70%;
+}
+
+thead {
+    color: white;
+}
+
+tbody {
+    color: gray;
+}
+
+td {
+    border: 2px solid rgb(59, 59, 59);
+    padding: 0.4rem 0.6rem;
+    text-align: start;
+}
+
+.bmi-inputs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 2rem;
+}
+
+.bmi-title {
+    margin-bottom: 0.7rem;
+}
+
+.data {
+    color: gray;
+    padding: 1rem;
+    background-color: rgb(61, 61, 61);
+    border-radius: 1rem;
+    border: none;
+    width: 80%;
+    margin-top: 0.5rem;
+}
+
+#factor {
+    grid-template-rows: repeat(1);
+    width: 190%;
+}
+
+#btn-calc {
+    width: 70%;
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+}
+
+.bmi-gander {
+    width: 92%;
+}
+
+
+/* team styles */
+.team {
+    text-align: center;
+}
+
+.team-container {
     background-color: rgb(34, 34, 34);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 1.25rem;
     border-radius: 1rem;
 }
-.team-image{
+
+.team-image {
     width: 20.4rem;
     height: 17rem;
     border-radius: 1.15rem;
+}
+
+/* footer styles */
+.foot {
+    background-color: rgb(34, 34, 34);
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6rem;
+    text-align: start;
+}
+
+.footer-columns {
+    color: white;
+}
+
+.footer-title {
+    color: rgba(222, 73, 18, 0.9);
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+#footer-description {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+}
+
+.footer-subtile {
+    font-size: 2rem;
+}
+
+.footer-list {
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+
+.footer-list>li {
+    list-style: none;
+}
+
+.list-description {
+    margin: 1rem 0;
+}
+
+hr {
+    color: darkgray;
+}
+
+.footer-bottom {
+    margin-top: 70px;
+    color: darkgray;
 }
 
 
@@ -351,9 +487,10 @@ nav a {
 
     /* runner styles */
 
-    .runner{
+    .runner {
         margin-top: 2rem;
     }
+
     .runner-container {
         flex-direction: column;
         gap: 40px;
@@ -381,20 +518,63 @@ nav a {
         background-size: cover;
     }
 
+
+    /* BMI styles */
+    .bmi {
+        text-align: start;
+        margin-top: 1.3rem;
+    }
+
+    .bmi-section-title{
+        padding: 1rem;
+    }
+
+    .bmi-container {
+        flex-direction: column;
+        text-align: start;
+        padding: 2rem 1rem;
+        margin-top: 1rem;
+    }
+
+    table{
+        margin-bottom: 2rem;
+    }
+
+    .bmi-gander {
+        width: 95%;
+    }
+
+    #factor{
+        width: 195%;
+    }
+
     /* team styles */
 
-    .team{
+    .team {
         margin-top: 4rem;
     }
 
-    .section-description{
+    .section-description {
         margin-bottom: 3rem;
     }
 
-    .team-container{
+    .team-container {
         grid-template-columns: repeat(1, 1fr);
         padding-left: 2rem;
         padding-bottom: 0.3rem;
         padding-top: 2rem;
+    }
+
+
+    /* footer styles */
+    .foot {
+        margin-top: 2rem;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
     }
 }
