@@ -1,6 +1,8 @@
 /* import section */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
 /* font styles */
 .none {
     display: none;
@@ -132,6 +134,13 @@ nav a {
     margin-bottom: 30px;
 }
 
+#font-chng {
+    font-family: "Dancing Script", cursive;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 6rem;
+}
+
 .btn-second {
     background-color: black;
     padding: 1.1rem 2.8rem;
@@ -201,7 +210,7 @@ nav a {
 .fitness {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
+    gap: 1.3rem;
 }
 
 .fitness-image {
@@ -215,7 +224,7 @@ nav a {
 }
 
 .fitness-description {
-    margin-top: 3px;
+    margin-top: 0.6rem;
 }
 
 /* runner styles */
@@ -563,12 +572,12 @@ hr {
     }
 
     /* Membership styles */
-    .member{
+    .member {
         text-align: start;
         margin-top: 1rem;
     }
 
-    .memberships{
+    .memberships {
         flex-direction: column;
         text-align: center;
         margin-left: 2rem;
@@ -577,7 +586,7 @@ hr {
         gap: 1.5rem;
     }
 
-    .member-description{
+    .member-description {
         margin-top: 0;
         margin-bottom: 1.8rem;
     }
