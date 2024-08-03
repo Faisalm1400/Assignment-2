@@ -443,6 +443,11 @@ td {
     list-style: none;
 }
 
+.footer-list>li a{
+    text-decoration: none;
+    color: darkgrey;
+}
+
 .list-description {
     margin: 1rem 0;
 }
